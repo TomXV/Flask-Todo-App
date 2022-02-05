@@ -1,6 +1,6 @@
-from datetime import datetime
+from datetime import datetime, date
 
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
 
 
@@ -18,7 +18,7 @@ class Post(db.Model):
 def index():
     if request.method == 'GET':
         posts = Post.query.order_by(Post.due).all()
-        return render_template('index.html', posts=posts)
+        return render_template('index.html', posts=posts, today=date.today())
     else:
         title = request.form.get('title')
         detail = request.form.get('detail')
@@ -64,4 +64,4 @@ def delete(id):
 
 
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run()

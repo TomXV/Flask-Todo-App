@@ -14,4 +14,5 @@ jobs:
       - name: Publish
         uses: cloudflare/wrangler-action@2.0.0
         with:
-          apiToken: ${{ 4sKkSZ-ODyuzCHQtWpQZ9G8xHcPhjafUFi411aEY }}
+          apiToken: ${{ 171537c32eaa7b900b3653c42ba051cc52327 }}
+          email: ${{ Tom_XV@outlook.jp }}

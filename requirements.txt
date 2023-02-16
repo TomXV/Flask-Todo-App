@@ -13,4 +13,4 @@ MarkupSafe==2.0.1
 requests==2.27.1
 SQLAlchemy==1.4.31
 urllib3==1.26.8
-Werkzeug==2.0.2
+Werkzeug==2.2.3

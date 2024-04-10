@@ -6,7 +6,7 @@
     <div class="card-body">
         <h2 class="card-title">{{ post.title }}<samp class="ml-3" style="font-size: 0.5em;"> 期限:{{ post.due.date() }}</samp></h2>
         <p>{{ post.detail }}</p>
-        <a class="btn btn-success" href="update/{{ post.id }}" role="button">Update</a>
+        <a class="btn btn-success" href="/update/{{ post.id }}" role="button">Update</a>
         <a class="btn btn-outline-success" href="/" role="button">Return</a>
     </div>
 </div>
